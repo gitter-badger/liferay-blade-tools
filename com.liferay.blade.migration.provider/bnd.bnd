@@ -1,0 +1,32 @@
+-buildpath: \
+	osgi.core,\
+	osgi.cmpn,\
+	biz.aQute.junit,\
+	com.liferay.blade.java.api;version=project,\
+	com.liferay.blade.migration.api;version=project,\
+	org.eclipse.core.resources,\
+	org.eclipse.core.runtime,\
+	org.eclipse.equinox.common,\
+	org.apache.felix.gogo.runtime,\
+	dnl.utils.jtext,\
+	org.apache.commons.lang,\
+	org.freemarker.freemarker
+
+Bundle-ActivationPolicy: lazy
+Bundle-SymbolicName: com.liferay.blade.migration.provider;singleton:=true
+Bundle-Version: 1.0.0.${tstamp}
+
+Import-Package: \
+	com.liferay.blade.java.api,\
+	com.liferay.blade.migration.api,\
+	org.osgi.framework;version=1.5.0,\
+	org.osgi.util.tracker.*,\
+	javax.swing,\
+	javax.swing.table,\
+	org.w3c.dom.*
+
+Private-Package: \
+	com.liferay.blade.migration.provider.*,\
+	dnl.utils.text.table.*,\
+	org.apache.commons.lang.*,\
+	freemarker.*

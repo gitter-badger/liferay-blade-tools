@@ -1,0 +1,13 @@
+-sub: *.bnd
+
+-releaserepo:
+
+# Main p2 feature
+p2_main = \
+    com.liferay.blade.java.api, \
+    com.liferay.blade.java.provider, \
+    com.liferay.blade.migration.api, \
+    com.liferay.blade.migration.liferay70, \
+    com.liferay.blade.migration.provider
+
+-dependson: ${p2_main}
